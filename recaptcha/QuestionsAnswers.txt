@@ -1,0 +1,35 @@
+Question: If you used CSS for the image carousel only, why?
+Answer: No I like to use bootstrap with some custom CSS, so that I can overwrite some properties provided by Bootstrap and provide my own implementation.
+        I have used it for other puposes as well.
+
+Question: If you used JS additionally for the image carousel, why?
+Answer: I used jquery to determine previous and next click to show images in loop. 
+
+Question: Why can the function 'grecaptcha.render()' not be directly called on pageload?
+Answer: I have not used grecaptcha, so don't have knowledge about it.
+
+Question: Why is the callback function as a parameter for the recaptcha javascript needed?
+Answer: Like I said in above question I don't have much knowledge about it but I can read and understand it more.
+
+Question: What are the advantages/disadvantages of the object oriented javascript?
+Answer: Let's me explain advantage of object orient programming in JavaScript vai a code snippet
+
+        Function MyFunction() {
+        }
+        MyFunction.prototype.print = function(){
+            //some code
+        }
+        Var obj = new MyFunction();
+
+        If we create large number of object of MyFunction, we will have only one print method in the prototype chain.
+        This prototying chain simple and flexible, because of it's dynamic nature it is being used across all the latest javascript based frameworks.
+        I would call it a advantage over other programming as usually all the objects comes with all the associated properties and methods. 
+
+        Disadvantage
+            -Uses of construture is little bit different that other programming languages
+            -type checking happens at run time
+
+
+Note: - I didn't finish the footer as the mobile view for the same is missing in screenshot and I am not aware of grecaptcha concepts.
+It is just creation of html elements and use bootstrap to make 3 sections, 1st and 2nd section are simple to make and 
+3rd section will contain just a form with grecaptcha validation on click of submit.

@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homeMenu {
+  padding: unset;
+}
+
+.stickyMenu {
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 25px;
+}
+
+.rightNavMenu {
+  margin-right: 30px;
+}
+
+/* Scrollable image container */
+.scrollableImageContainer {
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.selectedItem {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.navMenu:active {
+  color: green;
+}
+.jediImage {
+    width: 100%;
+    object-fit: contain;
+}
+
+.homeImage {
+    margin-left: 20px;
+    width: 230px;
+}
+
+.home{
+    float: left;
+    width: 178px;
+}
+
+.homeLinks {
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-right: 15px;
+  color: white;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .prev, .next {
+    top: 170px;
+  }
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 325px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .text {
+    top: 170px;
+    font-size: 30px;
+  }
+}
+
+/* Fading animation */
+.fadingAnimation {
+  -webkit-animation-name: fadingAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadingAnimation;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadingAnimation {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fadingAnimation {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mobileShoppingImage {
+  width:100%;
+  height:50%
+}
+
+@media screen and (max-width: 767px) {
+  .mobileShoppingImage {
+    margin-bottom:10px;
+  }
+}
+
+.themeHeader {
+  height: 100px;
+  margin-top: 40px;
+}
+
+.categories {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.category{
+  padding: 0 5px 0 5px;
+  color: grey;  
+}
+
+.category:active {
+  color: blue;
+}
+
+@media only screen and (max-width: 767px) {
+  .category {
+    display: block; 
+    float: none; 
+    width: 100%;
+    margin: 10 0px 10 0px;
+  }
+}
+
+.tiles {
+  margin-bottom: 35px;
+}
